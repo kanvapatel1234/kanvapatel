@@ -33,31 +33,62 @@ const projects = [
   {
     title: 'AI Powered Lecture Assistant',
     description:
-      'Transcribes YouTube lectures and generates summaries using transcripts and LLM tools and can download the notes.',
+      'Built an AI-powered lecture assistant that transcribes YouTube videos, generates structured summaries using LLMs, and exports downloadable study notes.',
     tags: ['Python', 'FastAPI', 'MongoDB', 'LLM','JWT Auth'],
+  },
+  {
+    title: 'Hospital Care-Desk',
+    description:(
+      <>A secure hospital management system for managing patients and their medical records with JWT authentication.
+      <a
+        href="https://hospital-caredesk.onrender.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#38bdf8", textDecoration: "none" }}
+      >
+        (click here)
+      </a></>),
+      
+    tags: ['MongoDB Atlas', 'Express.js', 'JWT Auth', 'Node.js',"HTML/CSS/JS"]
   },
   {
     title: 'Face Attendance System',
     description:
       'Real-time face recognition attendance system and storing details with FastAPI and MongoDB.',
-    tags: ['Python', 'FastAPI', 'MongoDB', 'DL'],
+    tags: ['Python', 'FastAPI', 'MongoDB', 'DL','FaceNet']
   },
   {
     title: 'Full Stack Phonebook',
-    description:
-      'A complete phonebook app with authentication and CRUD operations.',
-    tags: ['MongoDB', 'Express.js', 'JWT Auth', 'Node.js'],
+    description:(<>A complete phonebook app with authentication and CRUD operations.
+    <a
+              href="https://phonebook-kyfw.onrender.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
+      ,
+    tags: ['MongoDB', 'Express.js', 'JWT Auth', 'Node.js',"HTML/CSS/JS"],
   },
   {
     title: 'Crop Recommendation System',
-    description:
-      'Get the suitable crop for the present soil condtion.',
+    description:(<>Get the suitable crop to grow based on the soil and weather conditions.
+    <a
+              href="https://crop-prediction-theta.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
+      ,
     tags: ['ML', 'FastAPI', 'HTML/CSS/JS'],
   },
   {
     title: 'GO-Pokemon',
-    description:
-      'Get to know about the Pokemon you want.',
+        description:(<>Get to know about the pokemon you want.
+    <a
+              href="https://kanvapatel1234.github.io/go-pokemon/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
+    
+      ,
     tags: ['API','HTML/CSS/JS' ],
   },
   {
