@@ -256,7 +256,7 @@ function App() {
                 <strong>GitHub</strong>
                 
               </a>
-              <a href="www.linkedin.com/in/kanva-patel-20344531a" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/kanva-patel-20344531a/" target="_blank" rel="noreferrer">
                 <span>in</span>
                 <strong>LinkedIn</strong>
                 
