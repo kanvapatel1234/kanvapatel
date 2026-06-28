@@ -5,7 +5,7 @@ import './App.css'
 const skills = [
    {
     title: 'Programming Languages',
-    accent: 'blue',
+    accent: 'purple',
     icon: '</>',
     items: ['C++', 'Python', 'JavaScript', 'HTML', 'CSS',],
   },
