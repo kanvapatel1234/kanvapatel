@@ -3,29 +3,35 @@ import githubImg from './assets/github-white-icon.png'
 import './App.css'
 
 const skills = [
-   {
-    title: 'Programming Languages',
+  {
+    title: 'Programming Languages and Frameworks',
     accent: 'purple',
     icon: '</>',
-    items: ['C++', 'Python', 'JavaScript', 'HTML', 'CSS',],
+    items: ['C++', 'Python', 'JavaScript', 'HTML/TailwindCSS', 'React', 'Node.js', 'Express.js', 'FastAPI'],
   },
   {
     title: 'Core Concepts',
     accent: 'blue',
     icon: '🖥️',
-    items: ['Data Structures','OOPs', 'Operating Systems', 'Machine Learning', 'Deep Learning','Computer Vision','RAG','NLP'],
+    items: ['Data Structures', 'OOPs', 'Operating Systems', 'Computer Networking', 'DBMS', 'REST API',],
   },
   {
-    title: 'Frameworks & Databases',
+    title: 'Database and Backend Technologies',
     accent: 'green',
-    icon: '⚙️',
-    items: ['React', 'Node.js', 'Express.js', 'MongoDB', 'FastAPI','PostgreSQL','PyTorch','LangChain'],
+    icon: '🛢️',
+    items: ['MongoDB', 'PostgreSQL', 'Redis', 'NginX', 'JWT auth', 'OAuth', 'WebSockets'],
+  },
+  {
+    title: 'AI & ML',
+    accent: 'purple',
+    icon: '🤖',
+    items: ['Scikit-learn', 'LLM APIs', 'Computer Vision', 'Faiss', 'RAG'],
   },
   {
     title: 'Tools & Technologies',
-    accent: 'purple',
+    accent: 'green',
     icon: '🛠️',
-    items: ['Git/GitHub','REST API','Huggingface', 'Postman', 'AWS','Redis','Render','CI/CD','LLM API'],
+    items: ['Git/GitHub', 'Docker', 'AWS', 'Postman', 'Linux', 'VS Code'],
   },
 ]
 
@@ -34,111 +40,117 @@ const projects = [
     title: 'AI Powered Lecture Assistant',
     description:
       'Built an AI-powered lecture assistant that transcribes YouTube videos, generates structured summaries using LLMs, and exports downloadable study notes.',
-    tags: ['Python', 'FastAPI', 'MongoDB', 'LLM','JWT Auth'],
+    tags: ['Python', 'FastAPI', 'MongoDB', 'LLM', 'JWT Auth'],
+  },
+  {
+    title: 'MaxLift365 – Gym Progress Tracking Platform',
+    description:
+      'Full-stack workout tracking platform with JWT authentication, enabling users to log sets, reps, and weight progression across muscle groups with normalized PostgreSQL data modeling and PR metric tracking.',
+    tags: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'JWT'],
   },
   {
     title: 'Hospital Care-Desk',
-    description:(
+    description: (
       <>A secure hospital management system for managing patients and their medical records with JWT authentication.
-      <a
-        href="https://hospital-caredesk.onrender.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#38bdf8", textDecoration: "none" }}
-      >
-        (click here)
-      </a></>),
-      
-    tags: ['MongoDB Atlas', 'Express.js', 'JWT Auth', 'Node.js',"HTML/CSS/JS"]
+        <a
+          href="https://hospital-caredesk.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#38bdf8", textDecoration: "none" }}
+        >
+          (click here)
+        </a></>),
+
+    tags: ['MongoDB Atlas', 'Express.js', 'JWT Auth', 'Node.js', "HTML/CSS/JS"]
   },
   {
     title: 'Face Attendance System',
     description:
       'Real-time face recognition attendance system and storing details with FastAPI and MongoDB.',
-    tags: ['Python', 'FastAPI', 'MongoDB', 'DL','FaceNet']
+    tags: ['Python', 'FastAPI', 'MongoDB', 'DL', 'FaceNet']
   },
   {
     title: 'Full Stack Phonebook',
-    description:(<>A complete phonebook app with authentication and CRUD operations.
-    <a
-              href="https://phonebook-kyfw.onrender.com/"
+    description: (<>A complete phonebook app with authentication and CRUD operations.
+      <a
+        href="https://phonebook-kyfw.onrender.com/"
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
-      ,
-    tags: ['MongoDB', 'Express.js', 'JWT Auth', 'Node.js',"HTML/CSS/JS"],
+    ,
+    tags: ['MongoDB', 'Express.js', 'JWT Auth', 'Node.js', "HTML/CSS/JS"],
   },
   {
     title: 'Crop Recommendation System',
-    description:(<>Get the suitable crop to grow based on the soil and weather conditions.
-    <a
-              href="https://crop-prediction-theta.vercel.app/"
+    description: (<>Get the suitable crop to grow based on the soil and weather conditions.
+      <a
+        href="https://crop-prediction-theta.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
-      ,
+    ,
     tags: ['ML', 'FastAPI', 'HTML/CSS/JS'],
   },
   {
     title: 'GO-Pokemon',
-        description:(<>Get to know about the pokemon you want.
-    <a
-              href="https://kanvapatel1234.github.io/go-pokemon/"
+    description: (<>Get to know about the pokemon you want.
+      <a
+        href="https://kanvapatel1234.github.io/go-pokemon/"
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: "#38bdf8", textDecoration: "none" }}>(click here)</a></>)
-    
-      ,
-    tags: ['API','HTML/CSS/JS' ],
+
+    ,
+    tags: ['API', 'HTML/CSS/JS'],
   },
   {
-  title: "Funny JavaScript Games (Click to play)",
-  description: (
-    <>
-      <a
-        href="https://hand-cricket-wheat.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#38bdf8", textDecoration: "none" }}
-      >
-        Hand Cricket
-      </a>
-      {" | "}
-      <a
-        href="https://tic-tac-toe-game-tau-lac.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#38bdf8", textDecoration: "none" }}
-      >
-        Tic-Tac-Toe
-      </a>
-      {" | "}
-      <a
-        href="https://snake-water-gun-game-woad.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#38bdf8", textDecoration: "none" }}
-      >
-        Snake-Water-Gun
-      </a>
-    </>
-  ),
-  tags: ["HTML/CSS/JS"],
-},
+    title: "Funny JavaScript Games (Click to play)",
+    description: (
+      <>
+        <a
+          href="https://hand-cricket-wheat.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#38bdf8", textDecoration: "none" }}
+        >
+          Hand Cricket
+        </a>
+        {" | "}
+        <a
+          href="https://tic-tac-toe-game-tau-lac.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#38bdf8", textDecoration: "none" }}
+        >
+          Tic-Tac-Toe
+        </a>
+        {" | "}
+        <a
+          href="https://snake-water-gun-game-woad.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#38bdf8", textDecoration: "none" }}
+        >
+          Snake-Water-Gun
+        </a>
+      </>
+    ),
+    tags: ["HTML/CSS/JS"],
+  },
   {
     title: 'Typing speed test',
-    description:(
+    description: (
       <>Check your typing speed in words per minute.
-      <a
-        href="https://typing-test-rho-ten.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#38bdf8", textDecoration: "none" }}
-      >
-        (click here)
-      </a></>),
-      
-    tags: ['HTML/CSS/JS' ],
+        <a
+          href="https://typing-test-rho-ten.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#38bdf8", textDecoration: "none" }}
+        >
+          (click here)
+        </a></>),
+
+    tags: ['HTML/CSS/JS'],
   },
 
 
@@ -207,7 +219,7 @@ function App() {
             <h2>About</h2>
           </div>
           <p>
-           I am currently studying at BMS College of Engineering (BMSCE), Bengaluru, with a strong interest in Full Stack Development, Backend Engineering, Artificial Intelligence, Machine Learning, Deep Learning, LLM Integration, and Retrieval-Augmented Generation (RAG). I have a decent understanding of Data Structures and Algorithms and enjoy building real-world applications, solving practical problems, and continuously learning modern technologies to improve my skills as a developer.
+            I am currently studying at BMS College of Engineering (BMSCE), Bengaluru, with a strong interest in Full Stack Development, Backend Engineering, Artificial Intelligence, Machine Learning, Deep Learning, LLM Integration, and Retrieval-Augmented Generation (RAG). I have a decent understanding of Data Structures and Algorithms and enjoy building real-world applications, solving practical problems, and continuously learning modern technologies to improve my skills as a developer.
 
 
           </p>
@@ -280,17 +292,17 @@ function App() {
               <a href="mailto:kanvapateamchi@gmail.com">
                 <span>@</span>
                 <strong>Email</strong>
-                
+
               </a>
               <a href="https://github.com/kanvapatel1234" target="_blank" rel="noreferrer" className="contact-link">
                 <img src={githubImg} alt="GitHub" className="github-icon" />
                 <strong>GitHub</strong>
-                
+
               </a>
               <a href="https://www.linkedin.com/in/kanva-patel-20344531a/" target="_blank" rel="noreferrer">
                 <span>in</span>
                 <strong>LinkedIn</strong>
-                
+
               </a>
             </div>
 
